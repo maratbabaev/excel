@@ -1,0 +1,64 @@
+@import "./parts/_variables.scss";
+@import "./parts/_mixins.scss";
+
+
+
+.excel__table {
+position: absolute;
+left:0;
+right: 0;
+top:$header-height+$toolbar-height+$formula-height;
+overflow-x: auto;
+padding-bottom: 2px;
+.row {
+display: flex;
+height: $row-height;
+min-height: 20px;
+}
+
+.row-info {
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: $info-sell-width;
+height: 100%;
+border: 1px solid $border-color;
+background: rgb(247, 247, 247);
+border-top: 0;
+}
+
+.row-data {
+display: flex;
+}
+
+.column {
+    display: flex;
+justify-content: center;
+align-items: center;
+background: rgb(247, 247, 247);
+min-width: 40px;
+width: $cell-width;
+border: 1px solid $border-color;
+height: 100%;
+border-top: 0;
+border-left: 0;
+}
+
+.cell {
+min-width: 40px;
+padding: 5px;
+width: $cell-width;
+border: 1px solid #e2e3e3;
+height: 100%;
+border-top: 0;
+border-left: 0;
+color: #111;
+white-space: nowrap;
+
+    &.selected{
+border: 0;
+outline: 2px solid blue;
+z-index: 2;
+    }
+}
+}

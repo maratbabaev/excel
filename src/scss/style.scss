@@ -1,0 +1,54 @@
+
+@import "./parts/_fonts.scss";
+@import "./parts/header.scss";
+@import "./parts/toolbar.scss";
+@import "./parts/formula.scss";
+@import "./parts/table.scss";
+@import "./parts/dashboard.scss";
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+form,
+main, section,
+aside,
+header, footer,
+article, img {
+    display: block;
+}
+
+
+
+body {
+   font-size: 12px;
+   font-family: 'Roboto', sans-serif;
+}
+
+
+.excel {
+    position: relative;
+    color: #888;
+    height: 100%;
+    max-width: 100%;
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
